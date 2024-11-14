@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
+                 url("https://www.thespruce.com/thmb/xPSB_Ua5AIR_PApizxMP798pwEI=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/european-beech-growing-profile-3269265-hero-891f1d8f46924f19ac0f507a4eb1d481.JPG");
+    background-size: cover;
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+    padding-right: 845px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+.menu a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+.menu a:hover:before{
+ width: 90%;
+
+}
+
+.txt{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+
+}
+
+.txt span{
+    letter-spacing: 5px;
+    font-size: 2em;
+}
+.txt h1{
+    font-size: 3.2em;
+}
+.txt a{
+    text-decoration: none;
+    background: indianred;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    transition: 0.4s ;
+}
+.txt a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+}
+.txt p{
+    line-height: 30px;
+    margin-top: 10px;
+    color: rgb(204, 198, 198);
+
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                TrEE
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="pages.html">Pages</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <section class="txt">
+            
+            <h1>World Of Greenery</h1>
+            <span>Welcome Our Green World</span>
+            <p>Greenery brings life, balance, and beauty to our surroundings, providing a refreshing escape from the built environment. It plays a crucial role in improving air quality, reducing stress, and supporting diverse ecosystems by offering habitats for wildlife. Beyond aesthetics, greenery is essential for environmental health, helping to regulate temperatures, prevent soil erosion, and create oxygen. Integrating plants, trees, and natural landscapes into urban and rural areas alike fosters a healthier, more sustainable future for both people and the planet.</p>
+
+            <br>
+            <a href="index.html">Back</a>
+            <a href="pages.html">Next</a>
+        </section>
+    </header>
+</body>
+</html>
